@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        int numeroAlunos = 5;
+        // double [] notas = new double [5]-> [5] é o tamanho do vetor. Neste caso, armazena a nota de 50 alunos
+        double[] notas = new double [numeroAlunos]; //numeroAlunos = 5
+        for(int i = 0;i<numeroAlunos;i++){
+            System.out.println("Nota numero " + (i+1));
+            notas[i] = sc.nextDouble();
+        }
+        for (int i = 0;i < numeroAlunos;i++){
+            System.out.println("As notas são: " + notas[i]);
+        }
+        sc.close();
+    }
+}
