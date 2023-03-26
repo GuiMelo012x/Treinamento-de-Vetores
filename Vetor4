@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Vetor4 {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Insira o tamanho do vetor");
+        int a = sc.nextInt();
+        int[] v1 = new int[a];
+        int[] v2= new int[a];
+        for (int i=0; i<v1.length;i++){
+            System.out.print("Vetor 1: insira o " + (i+1) + " numero " + " ");
+            v1[i] = sc.nextInt();
+        }
+        for (int i=0; i<v2.length;i++){
+            System.out.print("Vetor 2: insira o " + (i+1) + " numero " + " ");
+            v2[i] = sc.nextInt();
+            if (v2[i] == v1[i]){
+                System.out.println("É igual");
+            }
+            else{
+                System.out.println("É diferente");
+            }
+        }
+        sc.close();
+}
+}
