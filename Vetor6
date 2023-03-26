@@ -1,0 +1,51 @@
+import java.util.Scanner;
+public class Vetor7 {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Tamanho dos Vetores: \n");
+        int a = sc.nextInt();
+        int v1[] = new int[a];
+        int v2[] = new int[a];
+        for (int i = 0; i<a;i++){
+            System.out.print("Posição " + i + " do Vetor 1: ");
+            v1[i] = sc.nextInt();
+        }
+        System.out.println();
+
+        for (int i = 0; i<a;i++){
+        System.out.print("Posição "+ i + " do Vetor 2: ");
+        v2[i] = sc.nextInt();
+        }
+
+        System.out.print("Vetor 1: ");
+        for (int i =0;i<a;i++){
+            System.out.print(v1[i] + " ");
+        }
+
+        System.out.println();
+
+        System.out.print("Vetor 2: ");
+        for (int i =0;i<a;i++){
+            System.out.print(v2[i]+ " ");
+        }
+        int soma = 0;
+        for (int i=0;i<a;i++){
+            soma += v1[i] + v2[i];
+        }
+        System.out.println();
+        System.out.print("A Soma é: " + soma);
+    int subtração = 0;
+    for (int i=0;i<a;i++){
+        subtração += v1[i] - v2[i];
+    }
+    System.out.println();
+    System.out.print("A Subtração é: " + subtração);
+    int multiplicação = 0;
+    for (int i=0;i<a;i++){
+        multiplicação += v1[i] * v2[i];
+    }
+    System.out.println();
+    System.out.print("A Multiplicação é: " + multiplicação);
+    sc.close();
+}
+}
