@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Vetor6 {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int v[] = new int[a];   
+        for (int i = 0;i<v.length;i++){
+            v[i] = i+1;
+        }
+        System.out.print("O vetor é ");
+        for (int i = 0;i<v.length;i++){
+            System.out.print(v[i] + " ");
+        }
+        System.out.println();
+        System.out.print("Da forma que a questão pede, ficaria: \n");
+        for(int i=0;i<v.length;i++){
+            if (v[i] % 2 == 0){
+                v[i] = v[i]/2;
+            }
+            else{
+                v[i] = v[i] * 3;
+            }
+        }
+        for(int i = 0;i<v.length;i++){
+            System.out.print(v[i] + " ");
+        }
+}
+}
